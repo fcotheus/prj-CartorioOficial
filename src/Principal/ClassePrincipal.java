@@ -1,12 +1,3 @@
-//eae to testando agora com o fork
-//eae to testando agora com o fork
-//eae to testando agora com o fork
-//eae to testando agora com o fork
-//eae to testando agora com o fork
-//eae to testando agora com o fork
-//eae to testando agora com o fork
-//eae to testando agora com o fork
-//eae to testando agora com o fork
 package Principal;
 
 import java.util.Scanner;
