@@ -1,3 +1,4 @@
+//fazendo um teste 12345
 package Principal;
 
 import java.io.BufferedReader;
@@ -64,6 +65,7 @@ public class Login {
 		while((linha = bufferLeitura.readLine()) != null){//Irá repetir até que a linha do arquivo seja vazia
 			String[] loginPassword = linha.split("\\|"); //Separa os valores da linha pelo separador |
 			//System.out.println(loginPassword[0]+" ******** "+loginPassword[1]);
+			
 			if(loginLogin.usuario.equals(loginPassword[0]) && (loginLogin.senha.equals(loginPassword[1]))){
 				
 			}
@@ -79,10 +81,8 @@ public class Login {
 		}else{
 			
 			System.out.print("\nUsuário e/ou Senha incorretos.");
-		}*/
-	}//fim validação login
-	
+		}
+	}//fim validação login*/
 	
 }//fim da classe login
-
-
+}
