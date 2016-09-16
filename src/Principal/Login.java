@@ -1,4 +1,3 @@
-//fazendo um teste 12345
 package Principal;
 
 import java.io.BufferedReader;
