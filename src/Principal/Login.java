@@ -1,3 +1,4 @@
+//fazendo um teste
 package Principal;
 
 import java.io.BufferedReader;
@@ -13,7 +14,7 @@ public class Login {
 	private String usuario;
 	private String senha;
 	
-	//MÈtodos Getters e Setters 
+	//M√©todos Getters e Setters 
 	public String getUsuario() {
 		return usuario;
 	}
@@ -32,7 +33,7 @@ public class Login {
 	}
 	
 	
-	//Metodo Login e VerificaÁ„o 
+	//Metodo Login e Verifica√ß√£o 
 	public void validacaoLogin(String usuario,String senha) throws IOException{
 			
 		Login loginLogin = new Login();
@@ -40,19 +41,19 @@ public class Login {
 		
 		System.out.println("**********CAMPO DE LOGIN**********\n");
 		
-		System.out.print("Usu·rio: ");
+		System.out.print("Usu√°rio: ");
 		loginLogin.setUsuario(ler.nextLine());
 			
 		System.out.print("Senha: ");
 		loginLogin.setSenha(ler.nextLine());
 		
-		//Salvando os usu·rios em arquivos TXT - As classes foram importadas em passo a passo...
-		File arq = new File("src/Principal/usuariosTabelioes/usuarios.txt"); //url - par‚metro de criaÁ„o para File que representa o caminho do arquivo
-		FileWriter escritor = new FileWriter(arq,true); // o valor true È para n„o apagar valor anterior existente.
+		//Salvando os usu√°rios em arquivos TXT - As classes foram importadas em passo a passo...
+		File arq = new File("src/Principal/usuariosTabelioes/usuarios.txt"); //url - par√¢metro de cria√ß√£o para File que representa o caminho do arquivo
+		FileWriter escritor = new FileWriter(arq,true); // o valor true √© para n√£o apagar valor anterior existente.
 		/*escritor.write(loginLogin.toString()+"\n"); //utiliza o modelo do toString criado
 		//escritor.write(usua2.toString()+"\n");//utiliza o modelo do toString criado
 		//escritor.write(usua3.toString()+"\n");//utiliza o modelo do toString criado
-		escritor.flush(); //libera o buffer de memÛria
+		escritor.flush(); //libera o buffer de mem√≥ria
 		escritor.close(); //fecha a escrita no arquivo*/
 		
 		//Recuperando os valores cadastrados em arquivo
@@ -61,7 +62,7 @@ public class Login {
 		BufferedReader bufferLeitura = new BufferedReader(leitor);
 		String linha; //Linha do arquivo
 		//ArrayList<Login> acessos = new ArrayList<>();
-		while((linha = bufferLeitura.readLine()) != null){//Ir· repetir atÈ que a linha do arquivo seja vazia
+		while((linha = bufferLeitura.readLine()) != null){//Ir√° repetir at√© que a linha do arquivo seja vazia
 			String[] loginPassword = linha.split("\\|"); //Separa os valores da linha pelo separador |
 			//System.out.println(loginPassword[0]+" ******** "+loginPassword[1]);
 			if(loginLogin.usuario.equals(loginPassword[0]))&& (loginLogin.senha.equals(loginPassword[1])){
@@ -78,9 +79,9 @@ public class Login {
 			
 		}else{
 			
-			System.out.print("\nUsu·rio e/ou Senha incorretos.");
+			System.out.print("\nUsu√°rio e/ou Senha incorretos.");
 		}
-	}//fim validaÁ„o login*/
+	}//fim valida√ß√£o login*/
 	
 	
 }//fim da classe login
