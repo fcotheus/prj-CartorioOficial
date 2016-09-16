@@ -28,7 +28,7 @@ public class Login {
 	}
 	
 	public String toString(){
-		return usuario + "|" + senha;
+		return usuario + "|" + senha + " \n ";
 	}
 	
 	
@@ -67,6 +67,13 @@ public class Login {
 			
 			if(loginLogin.usuario.equals(loginPassword[0]) && (loginLogin.senha.equals(loginPassword[1]))){
 				
+				Menu listaMenu = new Menu();
+				listaMenu.listaMenu();
+				
+				break;
+				
+			}else{
+				System.out.print("\nUsuário e/ou Senha incorretos.");
 			}
 			
 		}
