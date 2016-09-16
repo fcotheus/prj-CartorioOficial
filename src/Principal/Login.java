@@ -5,6 +5,7 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Login {
@@ -59,12 +60,17 @@ public class Login {
 		FileReader leitor = new FileReader(arq);
 		BufferedReader bufferLeitura = new BufferedReader(leitor);
 		String linha; //Linha do arquivo
+		//ArrayList<Login> acessos = new ArrayList<>();
 		while((linha = bufferLeitura.readLine()) != null){//Irá repetir até que a linha do arquivo seja vazia
 			String[] loginPassword = linha.split("\\|"); //Separa os valores da linha pelo separador |
 			//System.out.println(loginPassword[0]+" ******** "+loginPassword[1]);
+			if(loginLogin.usuario.equals(loginPassword[0]))&& (loginLogin.senha.equals(loginPassword[1])){
+				
+			}
+			
 		}
 			
-		if((loginLogin.getUsuario().equals(0)) && (loginLogin.getSenha().equals(1))){
+		/*if((loginLogin.getUsuario().equals(0)) && (loginLogin.getSenha().equals(1))){
 			
 			Menu listaMenu = new Menu();
 			listaMenu.listaMenu();
@@ -74,7 +80,7 @@ public class Login {
 			
 			System.out.print("\nUsuário e/ou Senha incorretos.");
 		}
-	}//fim validação login
+	}//fim validação login*/
 	
 	
 }//fim da classe login
