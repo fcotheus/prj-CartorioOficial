@@ -1,1 +1,1 @@
-dmAlbuquerque|123|Daniel Moura Albuquerque|Rua José Hardy|76||Bairro|Frecheirinha|null
+dm.albuquerque|123|Daniel M. Albuquerque|Rua Tal tal|76|Cohab|Cohab|Frecheirinha|Ceará

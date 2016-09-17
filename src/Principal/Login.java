@@ -63,8 +63,7 @@ public class Login {
 		//ArrayList<Login> acessos = new ArrayList<>();
 		while((linha = bufferLeitura.readLine()) != null){//Irá repetir até que a linha do arquivo seja vazia
 			String[] loginPassword = linha.split("\\|"); //Separa os valores da linha pelo separador |
-			System.out.println(loginPassword[0]+" ******** "+loginPassword[1]);
-			
+						
 			if((loginLogin.usuario.equals(loginPassword[0])) && (loginLogin.senha.equals(loginPassword[1]))){
 				
 				Menu listaMenu = new Menu();
@@ -76,19 +75,8 @@ public class Login {
 				System.out.print("\nUsuário e/ou Senha incorretos.");
 			}
 			
-		}
+		}//fim validação login
 			
-		/*if((loginLogin.getUsuario().equals(0)) && (loginLogin.getSenha().equals(1))){
-			
-			Menu listaMenu = new Menu();
-			listaMenu.listaMenu();
-			
-			
-		}else{
-			
-			System.out.print("\nUsuário e/ou Senha incorretos.");
-		}
-	}//fim validação login*/
-	
+		
+}//fim validação login
 }//fim da classe login
-}

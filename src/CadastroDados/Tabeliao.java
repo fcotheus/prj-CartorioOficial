@@ -102,10 +102,10 @@ public class Tabeliao extends Pessoa{
 		System.out.print("Cidade: ");
 		dados.setCidade(ler.nextLine());
 		
-		/*System.out.print("Estado: ");
+		System.out.print("Estado: ");
 		dados.setEstado(ler.nextLine());
 		
-		System.out.print("Telefone fixo: ");
+		/*System.out.print("Telefone fixo: ");
 		dados.setTelefoneFixo(ler.nextLine());
 		
 		System.out.print("E-mail: ");
@@ -133,8 +133,8 @@ public class Tabeliao extends Pessoa{
 		dados.setTituloEleitoral(ler.nextLine());
 		
 		System.out.print("Cargo: ");
-		dados.setCargo(ler.nextLine());
-		*/
+		dados.setCargo(ler.nextLine());*/
+		
 		
 		//Salvando os usuários em arquivos TXT - As classes foram importadas em passo a passo...
 		File arq = new File("src/CadastroDados/tabeliao/tabelioesCadastrados.txt"); //url - parâmetro de criação para File que representa o caminho do arquivo
