@@ -27,9 +27,6 @@ public class Login {
 		this.senha = senha;
 	}
 	
-	/*public String toString(){
-		return usuario + "|" + senha + "\n";
-	}*/
 	
 	
 	//Metodo Login e Verificação 
@@ -47,20 +44,14 @@ public class Login {
 		loginLogin.setSenha(ler.nextLine());
 		
 		//Salvando os usuários em arquivos TXT - As classes foram importadas em passo a passo...
-		File arq = new File("src/Principal/usuariosTabelioes/usuarios.txt"); //url - parâmetro de criação para File que representa o caminho do arquivo
+		File arq = new File("src/CadastroDados/tabeliao/tabelioesCadastrados.txt"); //url - parâmetro de criação para File que representa o caminho do arquivo
 		FileWriter escritor = new FileWriter(arq,true); // o valor true é para não apagar valor anterior existente.
-		/*escritor.write(loginLogin.toString()+"\n"); //utiliza o modelo do toString criado
-		escritor.write(usua2.toString()+"\n");//utiliza o modelo do toString criado
-		//escritor.write(usua3.toString()+"\n");//utiliza o modelo do toString criado
-		escritor.flush(); //libera o buffer de memória
-		escritor.close(); //fecha a escrita no arquivo*/
 		
 		//Recuperando os valores cadastrados em arquivo
-		//Seria redundante (aqui!) utilizar outro objeto File - utilizaremos arq.
 		FileReader leitor = new FileReader(arq);
 		BufferedReader bufferLeitura = new BufferedReader(leitor);
 		String linha; //Linha do arquivo
-		//ArrayList<Login> acessos = new ArrayList<>();
+
 		while((linha = bufferLeitura.readLine()) != null){//Irá repetir até que a linha do arquivo seja vazia
 			String[] loginPassword = linha.split("\\|"); //Separa os valores da linha pelo separador |
 						
@@ -78,5 +69,5 @@ public class Login {
 		}//fim validação login
 			
 		
-}//fim validação login
+}//
 }//fim da classe login
