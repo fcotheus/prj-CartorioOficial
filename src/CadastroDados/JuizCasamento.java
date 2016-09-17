@@ -1,7 +1,7 @@
 package CadastroDados;
 import java.util.Scanner;
 
-public class JuizCasamento extends Pessoa{
+public class JuizCasamento extends CadastroClassePai{
 	
 	Scanner ler = new Scanner(System.in);
 	

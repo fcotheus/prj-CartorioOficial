@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Tabeliao extends Pessoa{
+public class Tabeliao extends CadastroClassePai{
 
 	Scanner ler = new Scanner(System.in);
 	Scanner lerInteiro = new Scanner(System.in);

@@ -1,7 +1,7 @@
 package CadastroDados;
 import java.util.Scanner;
 
-public class DadosCartorio extends Pessoa {
+public class DadosCartorio extends CadastroClassePai {
 	
 	Scanner ler = new Scanner(System.in);
 	
@@ -31,54 +31,54 @@ public class DadosCartorio extends Pessoa {
 	
 	public void DadosCartorio(){
 		
-		DadosCartorio dados = new DadosCartorio();
+		DadosCartorio dadosCart = new DadosCartorio();
 		
 		System.out.println("\n***************DADOS DO CARTÓRIO***************\n");
 		
 		System.out.print("Nome do Cartório: ");
-		dados.setNome(ler.nextLine());
+		dadosCart.setNome(ler.nextLine());
 		
 		System.out.print("Endereço: ");
-		dados.setEndereco(ler.nextLine());
+		dadosCart.setEndereco(ler.nextLine());
 		
 		System.out.print("Número: ");
-		dados.setNumero(ler.nextInt());
+		dadosCart.setNumero(ler.nextInt());
 		
 		System.out.print("Complemento: ");
-		dados.setComplemento(ler.nextLine());
+		dadosCart.setComplemento(ler.nextLine());
 		
 		System.out.print("Bairro: ");
-		dados.setBairro(ler.nextLine());
+		dadosCart.setBairro(ler.nextLine());
 		
 		System.out.print("Cidade: ");
-		dados.setCidade(ler.nextLine());
+		dadosCart.setCidade(ler.nextLine());
 		
 		System.out.print("Estado: ");
-		dados.setEstado(ler.nextLine());
+		dadosCart.setEstado(ler.nextLine());
 		
 		System.out.print("Telefone fixo: ");
-		dados.setTelefoneFixo(ler.nextLine());
+		dadosCart.setTelefoneFixo(ler.nextLine());
 		
 		System.out.print("E-mail: ");
-		dados.setEmail(ler.nextLine());
+		dadosCart.setEmail(ler.nextLine());
 		
 		System.out.print("CEP: ");
-		dados.setCep(ler.nextLine());
+		dadosCart.setCep(ler.nextLine());
 		
 		System.out.print("Comarca: ");
-		dados.setComarca(ler.nextLine());
+		dadosCart.setComarca(ler.nextLine());
 		
 		System.out.print("Distrito: ");
-		dados.setDistrito(ler.nextLine());
+		dadosCart.setDistrito(ler.nextLine());
 		
 		System.out.print("CNPJ: ");
-		dados.setCnpj(ler.nextLine());
+		dadosCart.setCnpj(ler.nextLine());
 		
 		System.out.print("CNS Serventia: ");
-		dados.setCnsServentia(ler.nextLine());
+		dadosCart.setCnsServentia(ler.nextLine());
 		
 		System.out.print("Titular do Cartório: ");
-		dados.setTitularCartorio(ler.nextLine());
+		dadosCart.setTitularCartorio(ler.nextLine());
 	
 		
 	}

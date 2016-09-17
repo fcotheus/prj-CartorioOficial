@@ -1,7 +1,7 @@
 package CadastroDados;
 import java.util.Scanner;
 
-public class Pessoa {
+public class CadastroClassePai {
 	
 	Scanner ler = new Scanner(System.in);
 	
