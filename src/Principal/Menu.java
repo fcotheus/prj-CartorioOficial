@@ -1,5 +1,6 @@
 package Principal;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import CadastroDados.DadosCartorio;
@@ -22,7 +23,7 @@ public class Menu {
 	
 	
 	//===============================MENU PRINCIPAL============================================
-	public void listaMenu(){
+	public void listaMenu() throws IOException{
 		
 		System.out.println("\n***************MENU***************\n");
 		
@@ -146,7 +147,7 @@ public class Menu {
 	}//fim do menu Dados do Cartório
 	
 	//===============================MENU TABELIÃO============================================
-	public void menuDadosTabeliao(){
+	public void menuDadosTabeliao() throws IOException{
 		
 		System.out.println("\n***************MENU DADOS DO TABELIÃO***************\n");
 		

@@ -1,9 +1,13 @@
 package CadastroDados;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Tabeliao extends Pessoa{
 
 	Scanner ler = new Scanner(System.in);
+	Scanner lerInteiro = new Scanner(System.in);
 	
 	private String celular;
 	private String cpf;
@@ -63,16 +67,22 @@ public class Tabeliao extends Pessoa{
 	}
 	
 	public String toString(){
-		return usuario + "|" + senha + "\n";
+		return usuario + "|" + senha + "|" + getNome() + "|" + getEndereco() + "|" + getNumero() + "|" + getComplemento() + "|" + getBairro() + "|" + getCidade() + "|" + getEstado();
 	}
 	
 	
 	//Método Tabelião
-	public void DadosTabeliao(){
+	public void DadosTabeliao() throws IOException{
 		
 		Tabeliao dados = new Tabeliao();
 		
 		System.out.println("\n***************DADOS DO TABELIÃO***************\n");
+		
+		System.out.print("Usuário: ");
+		dados.setUsuario(ler.nextLine());
+		
+		System.out.print("Senha: ");
+		dados.setSenha(ler.nextLine());
 		
 		System.out.print("Nome: ");
 		dados.setNome(ler.nextLine());
@@ -81,7 +91,7 @@ public class Tabeliao extends Pessoa{
 		dados.setEndereco(ler.nextLine());
 		
 		System.out.print("Número: ");
-		dados.setNumero(ler.nextInt());
+		dados.setNumero(lerInteiro.nextInt());
 		
 		System.out.print("Complemento: ");
 		dados.setComplemento(ler.nextLine());
@@ -92,7 +102,7 @@ public class Tabeliao extends Pessoa{
 		System.out.print("Cidade: ");
 		dados.setCidade(ler.nextLine());
 		
-		System.out.print("Estado: ");
+		/*System.out.print("Estado: ");
 		dados.setEstado(ler.nextLine());
 		
 		System.out.print("Telefone fixo: ");
@@ -124,14 +134,14 @@ public class Tabeliao extends Pessoa{
 		
 		System.out.print("Cargo: ");
 		dados.setCargo(ler.nextLine());
+		*/
 		
-		System.out.print("Usuário: ");
-		dados.setUsuario(ler.nextLine());
-		
-		System.out.print("Senha: ");
-		dados.setSenha(ler.nextLine());
-		
-	
+		//Salvando os usuários em arquivos TXT - As classes foram importadas em passo a passo...
+		File arq = new File("src/CadastroDados/tabeliao/tabelioesCadastrados.txt"); //url - parâmetro de criação para File que representa o caminho do arquivo
+		FileWriter escritor = new FileWriter(arq,true); // o valor true é para não apagar valor anterior existente.
+		escritor.write(dados.toString()+"\n"); //utiliza o modelo do toString criado
+		escritor.flush(); //libera o buffer de memória
+		escritor.close(); //fecha a escrita no arquivo*/
 		
 	}
 
