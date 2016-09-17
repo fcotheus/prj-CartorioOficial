@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class CadastroClassePai {
 	
 	Scanner ler = new Scanner(System.in);
+	Scanner lerInteiro = new Scanner(System.in);
 	
 	private String nome;
 	private String endereco;
@@ -93,10 +94,63 @@ public class CadastroClassePai {
 		this.distrito = distrito;
 	}
 	
-	
-	
-	
-	
+	public void CadastroDadosPessoais(){
+		
+		CadastroClassePai dados = new CadastroClassePai();
+		
+		System.out.print("Nome: ");
+		dados.setNome(ler.nextLine());
+		
+		System.out.print("Endereço: ");
+		dados.setEndereco(ler.nextLine());
+			
+		System.out.print("Número: ");
+		dados.setNumero(lerInteiro.nextInt());
+			
+		System.out.print("Complemento: ");
+		dados.setComplemento(ler.nextLine());
+			
+		System.out.print("Bairro: ");
+		dados.setBairro(ler.nextLine());
+			
+		System.out.print("Cidade: ");
+		dados.setCidade(ler.nextLine());
+		
+		System.out.print("Estado: ");
+		dados.setEstado(ler.nextLine());
+			
+		System.out.print("Telefone fixo: ");
+		dados.setTelefoneFixo(ler.nextLine());
+			
+		System.out.print("E-mail: ");
+		dados.setEmail(ler.nextLine());
+			
+		System.out.print("CEP: ");
+		dados.setCep(ler.nextLine());
+			
+		System.out.print("Comarca: ");
+		dados.setComarca(ler.nextLine());
+			
+		System.out.print("Distrito: ");
+		dados.setDistrito(ler.nextLine());
+		
+		/*System.out.print("Celular: ");
+		dados.setCelular(ler.nextLine());
+			
+		System.out.print("CPF: ");
+		dados.setCpf(ler.nextLine());
+			
+		System.out.print("Identidade: ");
+		dados.setIdentidade(ler.nextLine());
+			
+		System.out.print("Título Eleitoral: ");
+		dados.setTituloEleitoral(ler.nextLine());
+			
+		System.out.print("Cargo: ");
+		dados.setCargo(ler.nextLine());*/
+
+	}
 	
 
 }
+

@@ -67,73 +67,76 @@ public class Tabeliao extends CadastroClassePai{
 	}
 	
 	public String toString(){
-		return usuario + "|" + senha + "|" + getNome() + "|" + getEndereco() + "|" + getNumero() + "|" + getComplemento() + "|" + getBairro() + "|" + getCidade() + "|" + getEstado();
+		return usuario + "|" + senha + "|" + getNome() + "|" + getEndereco() + "|" + getNumero() + "|" + getComplemento() + "|" + getBairro() + "|" + getCidade() + "|" + getEstado() + "\n";
 	}
 	
 	
 	//Método Tabelião
 	public void DadosTabeliao() throws IOException{
 		
-		Tabeliao dados = new Tabeliao();
+	Tabeliao dados = new Tabeliao();
+	CadastroClassePai chamaCadastro = new CadastroClassePai();
 		
-		System.out.println("\n***************DADOS DO TABELIÃO***************\n");
+	System.out.println("\n***************DADOS DO TABELIÃO***************\n");
+	
+	System.out.print("Usuário: ");
+	dados.setUsuario(ler.nextLine());
 		
-		System.out.print("Usuário: ");
-		dados.setUsuario(ler.nextLine());
+	System.out.print("Senha: ");
+	dados.setSenha(ler.nextLine());
+	
+	chamaCadastro.CadastroDadosPessoais();
 		
-		System.out.print("Senha: ");
-		dados.setSenha(ler.nextLine());
+	/*System.out.print("Nome: ");
+	dados.setNome(ler.nextLine());
+	
+	System.out.print("Endereço: ");
+	dados.setEndereco(ler.nextLine());
 		
-		System.out.print("Nome: ");
-		dados.setNome(ler.nextLine());
+	System.out.print("Número: ");
+	dados.setNumero(lerInteiro.nextInt());
 		
-		System.out.print("Endereço: ");
-		dados.setEndereco(ler.nextLine());
+	System.out.print("Complemento: ");
+	dados.setComplemento(ler.nextLine());
 		
-		System.out.print("Número: ");
-		dados.setNumero(lerInteiro.nextInt());
+	System.out.print("Bairro: ");
+	dados.setBairro(ler.nextLine());
 		
-		System.out.print("Complemento: ");
-		dados.setComplemento(ler.nextLine());
+	System.out.print("Cidade: ");
+	dados.setCidade(ler.nextLine());
+	
+	System.out.print("Estado: ");
+	dados.setEstado(ler.nextLine());
 		
-		System.out.print("Bairro: ");
-		dados.setBairro(ler.nextLine());
+	System.out.print("Telefone fixo: ");
+	dados.setTelefoneFixo(ler.nextLine());
 		
-		System.out.print("Cidade: ");
-		dados.setCidade(ler.nextLine());
+	System.out.print("E-mail: ");
+	dados.setEmail(ler.nextLine());
 		
-		System.out.print("Estado: ");
-		dados.setEstado(ler.nextLine());
+	System.out.print("CEP: ");
+	dados.setCep(ler.nextLine());
 		
-		/*System.out.print("Telefone fixo: ");
-		dados.setTelefoneFixo(ler.nextLine());
+	System.out.print("Comarca: ");
+	dados.setComarca(ler.nextLine());
 		
-		System.out.print("E-mail: ");
-		dados.setEmail(ler.nextLine());
+	System.out.print("Distrito: ");
+	dados.setDistrito(ler.nextLine());
+	
+	System.out.print("Celular: ");
+	dados.setCelular(ler.nextLine());
 		
-		System.out.print("CEP: ");
-		dados.setCep(ler.nextLine());
+	System.out.print("CPF: ");
+	dados.setCpf(ler.nextLine());
 		
-		System.out.print("Comarca: ");
-		dados.setComarca(ler.nextLine());
+	System.out.print("Identidade: ");
+	dados.setIdentidade(ler.nextLine());
 		
-		System.out.print("Distrito: ");
-		dados.setDistrito(ler.nextLine());
+	System.out.print("Título Eleitoral: ");
+	dados.setTituloEleitoral(ler.nextLine());
 		
-		System.out.print("Celular: ");
-		dados.setCelular(ler.nextLine());
-		
-		System.out.print("CPF: ");
-		dados.setCpf(ler.nextLine());
-		
-		System.out.print("Identidade: ");
-		dados.setIdentidade(ler.nextLine());
-		
-		System.out.print("Título Eleitoral: ");
-		dados.setTituloEleitoral(ler.nextLine());
-		
-		System.out.print("Cargo: ");
-		dados.setCargo(ler.nextLine());*/
+	System.out.print("Cargo: ");
+	dados.setCargo(ler.nextLine());*/
 		
 		
 		//Salvando os usuários em arquivos TXT - As classes foram importadas em passo a passo...

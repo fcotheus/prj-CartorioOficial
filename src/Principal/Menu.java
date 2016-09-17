@@ -99,7 +99,7 @@ public class Menu {
 	
 	
 	//===============================MENU CARTÓRIO============================================
-	public void menuDadosCartorio(){
+	public void menuDadosCartorio() throws IOException{
 		
 		System.out.println("\n***************MENU DADOS DO CARTÓRIO***************\n");
 		

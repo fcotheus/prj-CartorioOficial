@@ -1,9 +1,11 @@
 package CadastroDados;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class DadosCartorio extends CadastroClassePai {
 	
 	Scanner ler = new Scanner(System.in);
+	Scanner lerInteiro = new Scanner(System.in);
 	
 	private String cnpj;
 	private String cnsServentia;
@@ -29,9 +31,11 @@ public class DadosCartorio extends CadastroClassePai {
 		this.titularCartorio = titularCartorio;
 	}
 	
-	public void DadosCartorio(){
+	public void DadosCartorio() throws IOException{
 		
 		DadosCartorio dadosCart = new DadosCartorio();
+		/*CadastroClassePai chamaCadastro = new CadastroClassePai();
+		chamaCadastro.DadosParaCadastro();*/
 		
 		System.out.println("\n***************DADOS DO CARTÓRIO***************\n");
 		
@@ -40,37 +44,37 @@ public class DadosCartorio extends CadastroClassePai {
 		
 		System.out.print("Endereço: ");
 		dadosCart.setEndereco(ler.nextLine());
-		
+			
 		System.out.print("Número: ");
-		dadosCart.setNumero(ler.nextInt());
-		
+		dadosCart.setNumero(lerInteiro.nextInt());
+			
 		System.out.print("Complemento: ");
 		dadosCart.setComplemento(ler.nextLine());
-		
+			
 		System.out.print("Bairro: ");
 		dadosCart.setBairro(ler.nextLine());
-		
+			
 		System.out.print("Cidade: ");
 		dadosCart.setCidade(ler.nextLine());
 		
 		System.out.print("Estado: ");
 		dadosCart.setEstado(ler.nextLine());
-		
+			
 		System.out.print("Telefone fixo: ");
 		dadosCart.setTelefoneFixo(ler.nextLine());
-		
+			
 		System.out.print("E-mail: ");
 		dadosCart.setEmail(ler.nextLine());
-		
+			
 		System.out.print("CEP: ");
 		dadosCart.setCep(ler.nextLine());
-		
+			
 		System.out.print("Comarca: ");
 		dadosCart.setComarca(ler.nextLine());
-		
+			
 		System.out.print("Distrito: ");
 		dadosCart.setDistrito(ler.nextLine());
-		
+
 		System.out.print("CNPJ: ");
 		dadosCart.setCnpj(ler.nextLine());
 		
