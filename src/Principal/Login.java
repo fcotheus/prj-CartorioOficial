@@ -27,9 +27,9 @@ public class Login {
 		this.senha = senha;
 	}
 	
-	public String toString(){
-		return usuario + "|" + senha + " \n ";
-	}
+	/*public String toString(){
+		return usuario + "|" + senha + "\n";
+	}*/
 	
 	
 	//Metodo Login e Verificação 
@@ -50,7 +50,7 @@ public class Login {
 		File arq = new File("src/Principal/usuariosTabelioes/usuarios.txt"); //url - parâmetro de criação para File que representa o caminho do arquivo
 		FileWriter escritor = new FileWriter(arq,true); // o valor true é para não apagar valor anterior existente.
 		/*escritor.write(loginLogin.toString()+"\n"); //utiliza o modelo do toString criado
-		//escritor.write(usua2.toString()+"\n");//utiliza o modelo do toString criado
+		escritor.write(usua2.toString()+"\n");//utiliza o modelo do toString criado
 		//escritor.write(usua3.toString()+"\n");//utiliza o modelo do toString criado
 		escritor.flush(); //libera o buffer de memória
 		escritor.close(); //fecha a escrita no arquivo*/
@@ -63,9 +63,9 @@ public class Login {
 		//ArrayList<Login> acessos = new ArrayList<>();
 		while((linha = bufferLeitura.readLine()) != null){//Irá repetir até que a linha do arquivo seja vazia
 			String[] loginPassword = linha.split("\\|"); //Separa os valores da linha pelo separador |
-			//System.out.println(loginPassword[0]+" ******** "+loginPassword[1]);
+			System.out.println(loginPassword[0]+" ******** "+loginPassword[1]);
 			
-			if(loginLogin.usuario.equals(loginPassword[0]) && (loginLogin.senha.equals(loginPassword[1]))){
+			if((loginLogin.usuario.equals(loginPassword[0])) && (loginLogin.senha.equals(loginPassword[1]))){
 				
 				Menu listaMenu = new Menu();
 				listaMenu.listaMenu();

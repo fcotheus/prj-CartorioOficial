@@ -62,6 +62,10 @@ public class Tabeliao extends Pessoa{
 		this.cargo = cargo;
 	}
 	
+	public String toString(){
+		return usuario + "|" + senha + "\n";
+	}
+	
 	
 	//Método Tabelião
 	public void DadosTabeliao(){
