@@ -5,3 +5,4 @@ dm|123|nome|ender|7|complemento|bairro|cidade|estado
 
 1|1|1|1|1|1|1|1|1
 
+usuario|senha|nome|endereço|7|complemento|bairro|cidade|estado
