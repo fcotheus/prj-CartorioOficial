@@ -67,7 +67,7 @@ public class Tabeliao extends CadastroClassePai{
 	}
 	
 	public String toString(){
-		return usuario + "|" + senha + "|" + getNome() + "|" + getEndereco() + "|" + getNumero() + "|" + getComplemento() + "|" + getBairro() + "|" + getCidade() + "|" + getEstado() +"\n";
+		return usuario + "|" + senha + "|" + getNome() + "|" + getEndereco() + "|" + getNumero() + "|" + getComplemento() + "|" + getBairro() + "|" + getCidade() + "|" + getEstado() + "\r\n";
 	}
 	
 	
