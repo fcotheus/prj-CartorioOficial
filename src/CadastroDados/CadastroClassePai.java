@@ -94,7 +94,7 @@ public class CadastroClassePai {
 		this.distrito = distrito;
 	}
 	
-	public void CadastroDadosPessoais(){
+	/*public void CadastroDadosPessoais(){
 		
 		CadastroClassePai dados = new CadastroClassePai();
 		
@@ -147,9 +147,9 @@ public class CadastroClassePai {
 		dados.setTituloEleitoral(ler.nextLine());
 			
 		System.out.print("Cargo: ");
-		dados.setCargo(ler.nextLine());*/
+		dados.setCargo(ler.nextLine());
 
-	}
+	}*/
 	
 
 }

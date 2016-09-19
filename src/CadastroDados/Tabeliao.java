@@ -67,82 +67,82 @@ public class Tabeliao extends CadastroClassePai{
 	}
 	
 	public String toString(){
-		return usuario + "|" + senha + "|" + getNome() + "|" + getEndereco() + "|" + getNumero() + "|" + getComplemento() + "|" + getBairro() + "|" + getCidade() + "|" + getEstado() + "\n";
+		return usuario + "|" + senha + "|" + getNome() + "|" + getEndereco() + "|" + getNumero() + "|" + getComplemento() + "|" + getBairro() + "|" + getCidade() + "|" + getEstado() +"\n";
 	}
 	
 	
 	//Método Tabelião
 	public void DadosTabeliao() throws IOException{
 		
-	Tabeliao dados = new Tabeliao();
-	CadastroClassePai chamaCadastro = new CadastroClassePai();
+	Tabeliao dadosTab = new Tabeliao();
+	//CadastroClassePai chamaCadastro = new CadastroClassePai();
 		
 	System.out.println("\n***************DADOS DO TABELIÃO***************\n");
 	
 	System.out.print("Usuário: ");
-	dados.setUsuario(ler.nextLine());
+	dadosTab.setUsuario(ler.nextLine());
 		
 	System.out.print("Senha: ");
-	dados.setSenha(ler.nextLine());
+	dadosTab.setSenha(ler.nextLine());
 	
-	chamaCadastro.CadastroDadosPessoais();
+	//chamaCadastro.CadastroDadosPessoais();
 		
-	/*System.out.print("Nome: ");
-	dados.setNome(ler.nextLine());
+	System.out.print("Nome: ");
+	dadosTab.setNome(ler.nextLine());
 	
 	System.out.print("Endereço: ");
-	dados.setEndereco(ler.nextLine());
+	dadosTab.setEndereco(ler.nextLine());
 		
 	System.out.print("Número: ");
-	dados.setNumero(lerInteiro.nextInt());
+	dadosTab.setNumero(lerInteiro.nextInt());
 		
 	System.out.print("Complemento: ");
-	dados.setComplemento(ler.nextLine());
+	dadosTab.setComplemento(ler.nextLine());
 		
 	System.out.print("Bairro: ");
-	dados.setBairro(ler.nextLine());
+	dadosTab.setBairro(ler.nextLine());
 		
 	System.out.print("Cidade: ");
-	dados.setCidade(ler.nextLine());
+	dadosTab.setCidade(ler.nextLine());
 	
 	System.out.print("Estado: ");
-	dados.setEstado(ler.nextLine());
+	dadosTab.setEstado(ler.nextLine());
 		
-	System.out.print("Telefone fixo: ");
-	dados.setTelefoneFixo(ler.nextLine());
+	/*System.out.print("Telefone fixo: ");
+	dadosTab.setTelefoneFixo(ler.nextLine());
 		
 	System.out.print("E-mail: ");
-	dados.setEmail(ler.nextLine());
+	dadosTab.setEmail(ler.nextLine());
 		
 	System.out.print("CEP: ");
-	dados.setCep(ler.nextLine());
+	dadosTab.setCep(ler.nextLine());
 		
 	System.out.print("Comarca: ");
-	dados.setComarca(ler.nextLine());
+	dadosTab.setComarca(ler.nextLine());
 		
 	System.out.print("Distrito: ");
-	dados.setDistrito(ler.nextLine());
+	dadosTab.setDistrito(ler.nextLine());
 	
 	System.out.print("Celular: ");
-	dados.setCelular(ler.nextLine());
+	dadosTab.setCelular(ler.nextLine());
 		
 	System.out.print("CPF: ");
-	dados.setCpf(ler.nextLine());
+	dadosTab.setCpf(ler.nextLine());
 		
 	System.out.print("Identidade: ");
-	dados.setIdentidade(ler.nextLine());
+	dadosTab.setIdentidade(ler.nextLine());
 		
 	System.out.print("Título Eleitoral: ");
-	dados.setTituloEleitoral(ler.nextLine());
+	dadosTab.setTituloEleitoral(ler.nextLine());
 		
 	System.out.print("Cargo: ");
-	dados.setCargo(ler.nextLine());*/
+	dadosTab.setCargo(ler.nextLine());*/
 		
 		
 		//Salvando os usuários em arquivos TXT - As classes foram importadas em passo a passo...
 		File arq = new File("src/CadastroDados/tabeliao/tabelioesCadastrados.txt"); //url - parâmetro de criação para File que representa o caminho do arquivo
 		FileWriter escritor = new FileWriter(arq,true); // o valor true é para não apagar valor anterior existente.
-		escritor.write(dados.toString()+"\n"); //utiliza o modelo do toString criado
+		escritor.write(dadosTab.toString()+"\n"); //utiliza o modelo do toString criado
 		escritor.flush(); //libera o buffer de memória
 		escritor.close(); //fecha a escrita no arquivo*/
 		
