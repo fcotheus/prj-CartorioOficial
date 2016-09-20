@@ -94,9 +94,9 @@ public class CadastroClassePai {
 		this.distrito = distrito;
 	}
 	
-	/*public void CadastroDadosPessoais(){
+	public void CadastroDadosPessoais(Tabeliao dados){
 		
-		CadastroClassePai dados = new CadastroClassePai();
+		//CadastroClassePai dados = new CadastroClassePai();
 		
 		System.out.print("Nome: ");
 		dados.setNome(ler.nextLine());
@@ -119,7 +119,7 @@ public class CadastroClassePai {
 		System.out.print("Estado: ");
 		dados.setEstado(ler.nextLine());
 			
-		System.out.print("Telefone fixo: ");
+		/*System.out.print("Telefone fixo: ");
 		dados.setTelefoneFixo(ler.nextLine());
 			
 		System.out.print("E-mail: ");
@@ -147,9 +147,9 @@ public class CadastroClassePai {
 		dados.setTituloEleitoral(ler.nextLine());
 			
 		System.out.print("Cargo: ");
-		dados.setCargo(ler.nextLine());
+		dados.setCargo(ler.nextLine());*/
 
-	}*/
+	}
 	
 
 }

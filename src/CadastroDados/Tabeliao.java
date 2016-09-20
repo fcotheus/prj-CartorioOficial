@@ -75,7 +75,7 @@ public class Tabeliao extends CadastroClassePai{
 	public void DadosTabeliao() throws IOException{
 		
 	Tabeliao dadosTab = new Tabeliao();
-	//CadastroClassePai chamaCadastro = new CadastroClassePai();
+	CadastroClassePai chamaCadastro = new CadastroClassePai();
 		
 	System.out.println("\n***************DADOS DO TABELIÃO***************\n");
 	
@@ -85,9 +85,9 @@ public class Tabeliao extends CadastroClassePai{
 	System.out.print("Senha: ");
 	dadosTab.setSenha(ler.nextLine());
 	
-	//chamaCadastro.CadastroDadosPessoais();
+	chamaCadastro.CadastroDadosPessoais(dadosTab);
 		
-	System.out.print("Nome: ");
+	/*System.out.print("Nome: ");
 	dadosTab.setNome(ler.nextLine());
 	
 	System.out.print("Endereço: ");
