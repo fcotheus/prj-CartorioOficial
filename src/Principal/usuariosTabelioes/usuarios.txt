@@ -1,2 +1,0 @@
-daniel|123
-paulo|1234
