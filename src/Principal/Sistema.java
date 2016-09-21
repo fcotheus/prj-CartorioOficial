@@ -174,8 +174,8 @@ public class Sistema {
 		case 2:{
 			Tabeliao dados = new Tabeliao();
 			dados.DadosTabeliao();
-			//tabelioes;//
-		}break;
+			//tabeliao;
+		}break;////
 		
 		case 3:{
 			//Editar Dados do Tabeliao
