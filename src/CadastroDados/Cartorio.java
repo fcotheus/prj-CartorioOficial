@@ -2,7 +2,7 @@ package CadastroDados;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class DadosCartorio extends CadastroClassePai {
+public class Cartorio extends CadastroClassePai {
 	
 	Scanner ler = new Scanner(System.in);
 	Scanner lerInteiro = new Scanner(System.in);
@@ -33,7 +33,7 @@ public class DadosCartorio extends CadastroClassePai {
 	
 	public void DadosCartorio() throws IOException{
 		
-		DadosCartorio dadosCart = new DadosCartorio();
+		Cartorio dadosCart = new Cartorio();
 		/*CadastroClassePai chamaCadastro = new CadastroClassePai();
 		chamaCadastro.DadosParaCadastro();*/
 		

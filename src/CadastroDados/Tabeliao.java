@@ -87,42 +87,6 @@ public class Tabeliao extends CadastroClassePai{
 	
 	chamaCadastro.CadastroDadosPessoais(dadosTab);
 		
-	/*System.out.print("Nome: ");
-	dadosTab.setNome(ler.nextLine());
-	
-	System.out.print("Endereço: ");
-	dadosTab.setEndereco(ler.nextLine());
-		
-	System.out.print("Número: ");
-	dadosTab.setNumero(lerInteiro.nextInt());
-		
-	System.out.print("Complemento: ");
-	dadosTab.setComplemento(ler.nextLine());
-		
-	System.out.print("Bairro: ");
-	dadosTab.setBairro(ler.nextLine());
-		
-	System.out.print("Cidade: ");
-	dadosTab.setCidade(ler.nextLine());
-	
-	System.out.print("Estado: ");
-	dadosTab.setEstado(ler.nextLine());
-		
-	/*System.out.print("Telefone fixo: ");
-	dadosTab.setTelefoneFixo(ler.nextLine());
-		
-	System.out.print("E-mail: ");
-	dadosTab.setEmail(ler.nextLine());
-		
-	System.out.print("CEP: ");
-	dadosTab.setCep(ler.nextLine());
-		
-	System.out.print("Comarca: ");
-	dadosTab.setComarca(ler.nextLine());
-		
-	System.out.print("Distrito: ");
-	dadosTab.setDistrito(ler.nextLine());
-	
 	System.out.print("Celular: ");
 	dadosTab.setCelular(ler.nextLine());
 		
@@ -136,7 +100,7 @@ public class Tabeliao extends CadastroClassePai{
 	dadosTab.setTituloEleitoral(ler.nextLine());
 		
 	System.out.print("Cargo: ");
-	dadosTab.setCargo(ler.nextLine());*/
+	dadosTab.setCargo(ler.nextLine());
 		
 		
 		//Salvando os usuários em arquivos TXT - As classes foram importadas em passo a passo...

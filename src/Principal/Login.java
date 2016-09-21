@@ -57,7 +57,7 @@ public class Login {
 						
 			if((loginLogin.usuario.equals(loginPassword[0])) && (loginLogin.senha.equals(loginPassword[1]))){
 				
-				Menu listaMenu = new Menu();
+				Sistema listaMenu = new Sistema();
 				listaMenu.listaMenu();
 				
 				break;

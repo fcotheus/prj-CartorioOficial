@@ -3,13 +3,16 @@ package Principal;
 import java.io.IOException;
 import java.util.Scanner;
 
-import CadastroDados.DadosCartorio;
+import CadastroDados.Cartorio;
 import CadastroDados.JuizCasamento;
 import CadastroDados.Tabeliao;
 
-public class Menu {
+public class Sistema {
 	
 	private int menu;
+	private Cartorio cartorio;
+	private Tabeliao tabelioes[];
+
 	
 	Scanner ler = new Scanner(System.in);
 
@@ -21,6 +24,11 @@ public class Menu {
 		this.menu = menu;
 	}
 	
+	public Sistema(){
+		//lê do arquivo para o objeto cartório
+		cartorio = new Cartorio();
+		//lê do arquivo para o vetor de tabeliões
+	}
 	
 	//===============================MENU PRINCIPAL============================================
 	public void listaMenu() throws IOException{
@@ -103,10 +111,9 @@ public class Menu {
 		
 		System.out.println("\n***************MENU DADOS DO CARTÓRIO***************\n");
 		
-		System.out.println("[1] -> Pesquisar.");
-		System.out.println("[2] -> Cadastrar Dados do Cartório");
-		System.out.println("[3] -> Editar Dados do Cartório");
-		System.out.println("[4] -> Excluir Dados do Cartório");
+		System.out.println("[1] -> Cadastrar Dados do Cartório");
+		System.out.println("[2] -> Editar Dados do Cartório");
+		System.out.println("[3] -> Excluir Dados do Cartório");
 		System.out.println("[0] -> Sair do Programa.");
 
 		System.out.print("\nO que deseja fazer? -> "); 
@@ -116,22 +123,18 @@ public class Menu {
 			
 		case 1:{
 			
-			System.out.println("Por enquanto ainda não faz nada.");
+			//Cartorio dados = new Cartorio();			
+			cartorio.DadosCartorio();
 		
 		} break;
 		
 		case 2:{
-			DadosCartorio dados = new DadosCartorio();
-			dados.DadosCartorio();
-		}break;
+					}break;
 		
 		case 3:{
 			//Editar Dados do Cartório
 		}break;
-		
-		case 4:{
-			//Excluir Dados do Cartório
-		}break;
+
 		
 		case 0:{
 			System.out.println("Obrigado por usar nosso Sistema.");
@@ -171,6 +174,7 @@ public class Menu {
 		case 2:{
 			Tabeliao dados = new Tabeliao();
 			dados.DadosTabeliao();
+			tabelioes
 		}break;
 		
 		case 3:{
