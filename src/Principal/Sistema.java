@@ -27,6 +27,7 @@ public class Sistema {
 	public Sistema(){
 		//lê do arquivo para o objeto cartório
 		cartorio = new Cartorio();
+		tabelioes = new Tabeliao[4];
 		//lê do arquivo para o vetor de tabeliões
 	}
 	
@@ -174,7 +175,7 @@ public class Sistema {
 		case 2:{
 			Tabeliao dados = new Tabeliao();
 			dados.DadosTabeliao();
-			//tabeliao;
+			tabelioes[0] = dados; 
 		}break;////
 		
 		case 3:{
@@ -225,6 +226,7 @@ public class Sistema {
 		case 2:{
 			JuizCasamento dados = new JuizCasamento();
 			dados.DadosJuizCasamento();
+			
 		}break;
 		
 		case 3:{
