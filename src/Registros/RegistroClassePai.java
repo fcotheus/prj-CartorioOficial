@@ -2,12 +2,15 @@ package Registros;
 public class RegistroClassePai {
 	
 	private String nome;
+	private String rg;
+	private String cpf;
+	private String naturalidade;
 	private String matricula;
 	private String livro;
 	private String folha;
 	private String termo;
 	private String estadoCivil;
-	private char sexo;
+	private String sexo;
 	private String cidade;
 	private String estado;
 	private int dataNascInteiro;
@@ -24,6 +27,24 @@ public class RegistroClassePai {
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+	public String getRg() {
+		return rg;
+	}
+	public void setRg(String rg) {
+		this.rg = rg;
+	}
+	public String getCpf() {
+		return cpf;
+	}
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	public String getNaturalidade() {
+		return naturalidade;
+	}
+	public void setNaturalidade(String naturalidade) {
+		this.naturalidade = naturalidade;
 	}
 	public String getMatricula() {
 		return matricula;
@@ -55,12 +76,13 @@ public class RegistroClassePai {
 	public void setEstadoCivil(String estadoCivil) {
 		this.estadoCivil = estadoCivil;
 	}
-	public char getSexo() {
+	public String getSexo() {
 		return sexo;
 	}
-	public void setSexo(char sexo) {
+	public void setSexo(String sexo) {
 		this.sexo = sexo;
 	}
+
 	public String getCidade() {
 		return cidade;
 	}
@@ -115,6 +137,4 @@ public class RegistroClassePai {
 	public void setObservacoes(String observacoes) {
 		this.observacoes = observacoes;
 	}
-	
-
 }

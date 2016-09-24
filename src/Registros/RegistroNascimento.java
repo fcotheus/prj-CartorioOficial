@@ -1,5 +1,11 @@
 package Registros;
-public class RegistroNascimento {
+
+import java.io.IOException;
+import java.util.Scanner;
+import java.io.File;
+import java.io.FileWriter;
+
+public class RegistroNascimento extends RegistroClassePai{
 	
 	private String horaNascimento;
 	private String CidadeRegistro;
@@ -13,6 +19,8 @@ public class RegistroNascimento {
 	private String matriculaGemea;
 	private String numDecNascVivo;
 	
+	Scanner ler = new Scanner(System.in);
+	Scanner lerInteiro = new Scanner(System.in);
 	
 	
 	
@@ -169,8 +177,88 @@ public class RegistroNascimento {
 
 
 
-
-	public void DadosRegistroNascimento(){
+//Registro de Nascimento
+	public void DadosRegistroNascimento(){ 
+		
+		RegistroNascimento dadosNasc = new RegistroNascimento();
+		RegistroClassePai chamaRegistro = new RegistroClassePai();
+		
+		System.out.println("\n***************REGISTRO DE NASCIMENTO***************\n");
+		
+	     System.out.println("Nome:");
+	     dadosNasc.setNome(ler.nextLine());
+	     
+	     System.out.println("Matricula:");
+	     dadosNasc.setMatricula(ler.nextLine());
+	     
+	     System.out.println("Numero do livro:");
+	     dadosNasc.setLivro(ler.nextLine());
+	     	     
+	     System.out.println("Numero da Folha:");
+	     dadosNasc.setFolha(ler.nextLine());
+	     
+	     System.out.println("Termo");
+	     dadosNasc.setTermo(ler.nextLine());
+	     
+	     System.out.println("Data do Nascimento:");
+	     dadosNasc.setDataNacExtenso(lerInteiro.nextLine());
+	     
+		 System.out.print("HoraNascimento: ");
+		 dadosNasc.setHoraNascimento(ler.nextLine());
+		
+	     System.out.println("Cidade de Nascimento");
+	     dadosNasc.setCidade(ler.nextLine());
+		
+         System.out.print("Estado: ");
+		 dadosNasc.setEstado(ler.nextLine());
+		
+	    System.out.print("LocalNascimento: ");
+		dadosNasc.setLocalNascimento(ler.nextLine());
+		
+		System.out.println("Sexo:");
+		dadosNasc.setSexo(ler.nextLine());
+		
+		System.out.println("Pai");
+		dadosNasc.setNomepai(ler.nextLine());
+		
+		System.out.println("Mãe");
+		dadosNasc.setNomeMae(ler.nextLine());
+		
+		System.out.print("NomeAvoMascPaterno: ");
+		dadosNasc.setNomeAvoMascPaterno(ler.nextLine());
+		
+		System.out.print("NomeAvoFemPaterno: ");
+		dadosNasc.setNomeAvoFemPaterno(ler.nextLine());
+		
+		System.out.print("NomeAvoMascMaterno: ");
+		dadosNasc.setNomeAvoMascMaterno(ler.nextLine());
+		
+		System.out.print("NomeAvoFemMaterno: ");
+		dadosNasc.setNomeAvoFemMaterno(ler.nextLine());
+		
+		System.out.println("Gemeos");
+		dadosNasc.setGemeos(ler.nextLine());
+		
+		System.out.print("NomeGemeo: ");
+		dadosNasc.setNomeGemeo(ler.nextLine());
+		
+	    System.out.print("MatriculaGemea: ");
+		dadosNasc.setMatriculaGemea(ler.nextLine());
+		
+		System.out.println("Data do Registro");
+		dadosNasc.setDataRegistroExtenso(ler.nextLine());
+				
+		System.out.print("NumDecNascVivo: ");
+		dadosNasc.setNumDecNascVivo(ler.nextLine());
+		
+		System.out.print("Oberservação: ");
+		dadosNasc.setObservacoes(ler.nextLine());
+		
+        System.out.print("CidadeRegistro: ");
+		dadosNasc.setCidadeRegistro(ler.nextLine());
+		
+		System.out.print("Data do Registro: ");
+		dadosNasc.setDataRegistroExtenso(ler.nextLine());
 		
 	}
 }
