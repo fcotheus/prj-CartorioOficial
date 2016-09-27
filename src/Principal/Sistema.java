@@ -6,7 +6,7 @@ import java.util.Scanner;
 import CadastroDados.Cartorio;
 import CadastroDados.JuizCasamento;
 import CadastroDados.Tabeliao;
-import exercicio_Vetores_clientes.Cliente;
+
 
 public class Sistema {
 	
