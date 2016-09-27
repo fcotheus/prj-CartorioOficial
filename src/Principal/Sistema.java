@@ -6,6 +6,7 @@ import java.util.Scanner;
 import CadastroDados.Cartorio;
 import CadastroDados.JuizCasamento;
 import CadastroDados.Tabeliao;
+import exercicio_Vetores_clientes.Cliente;
 
 public class Sistema {
 	
@@ -176,6 +177,7 @@ public class Sistema {
 			Tabeliao dados = new Tabeliao();
 			dados.DadosTabeliao();
 			tabelioes[0] = dados; 
+			
 		}break;////
 		
 		case 3:{
