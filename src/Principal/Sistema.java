@@ -178,6 +178,13 @@ public class Sistema {
 			dados.DadosTabeliao();
 			tabelioes[0] = dados; 
 			
+			for(int i = 0; i < tabelioes.length; i++){
+				if(tabelioes[i] == null){
+					tabelioes[i] = dados;
+					break; //break do for
+				}
+			}
+			
 		}break;////
 		
 		case 3:{
@@ -206,7 +213,7 @@ public class Sistema {
 	//===============================MENU JUIZ CASAMENTO============================================
 	public void menuDadosJuizCasamento(){
 		
-		System.out.println("\n***************MENU DADOS DO TABELIÃO***************\n");
+		System.out.println("\n***************MENU DADOS DO JUIZ DE CASAMENTO***************\n");
 		
 		System.out.println("[1] -> Pesquisar.");
 		System.out.println("[2] -> Cadastrar Dados do Juiz de Casamento");
