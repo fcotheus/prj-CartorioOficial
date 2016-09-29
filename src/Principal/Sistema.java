@@ -16,7 +16,9 @@ public class Sistema {
 
 	
 	Scanner ler = new Scanner(System.in);
-
+	
+	
+	
 	public int getMenu() {
 		return menu;
 	}
@@ -54,7 +56,7 @@ public class Sistema {
 					return false;	
 		}
 		
-		//atualiza um dado
+		//atualiza um dado do Tabeliao
 		public boolean atualizar(Tabeliao t){
 			if(pesquisar(t) == true){ //pessoa existe no vetor
 				for(int i = 0; i < tabelioes.length; i++)
@@ -227,7 +229,8 @@ public class Sistema {
 		case 2:{
 			Tabeliao dados = new Tabeliao();
 			dados.DadosTabeliao();
-			tabelioes[0] = dados; 
+			tabelioes[0] = dados;
+			inserir(dados);
 			
 			
 			
