@@ -25,12 +25,63 @@ public class Sistema {
 		this.menu = menu;
 	}
 	
-	public Sistema(){
+	public Sistema(int numElementos){
 		//lê do arquivo para o objeto cartório
 		cartorio = new Cartorio();
-		tabelioes = new Tabeliao[4];
+		tabelioes = new Tabeliao[numElementos];
 		//lê do arquivo para o vetor de tabeliões
 	}
+	
+	
+	//insere um dado no tabelião
+	public boolean inserir(Tabeliao t){
+		for(int i = 0; i < tabelioes.length; i++)
+			if(tabelioes[i] == null){
+				tabelioes[i] = t;
+				return true;
+			}
+			return false;
+	}
+	
+	//Remove um dado do tabeliao
+		public boolean remover(){
+			for(int i = tabelioes.length-1; i >=0; i--)
+				if(pesquisar(i) != null)
+					if(tabelioes[i] != null){
+						tabelioes[i] = null;
+						return true;
+					}
+					return false;	
+		}
+		
+		//atualiza um dado
+		public boolean atualizar(Tabeliao t){
+			if(pesquisar(t) == true){ //pessoa existe no vetor
+				for(int i = 0; i < tabelioes.length; i++)
+					if(pesquisar(i).equals(t)){
+						tabelioes[i] = t;
+						return true;
+					}
+				return false;
+			}else
+				return false;
+		}
+		
+		//Pesquisa se o objeto p existe ou não no vetor
+		public boolean pesquisar(Tabeliao t){
+			for(int i = 0; i < tabelioes.length; i++)
+				if(tabelioes[i].equals(t)){
+					return true;
+				}	
+				return false;
+		}
+		
+		//Retorna o dado que estiver no índice passado por parametro.
+		public Tabeliao pesquisar(int indice){
+			return tabelioes[indice];
+		}
+	
+		
 	
 	//===============================MENU PRINCIPAL============================================
 	public void listaMenu() throws IOException{
@@ -178,12 +229,7 @@ public class Sistema {
 			dados.DadosTabeliao();
 			tabelioes[0] = dados; 
 			
-			for(int i = 0; i < tabelioes.length; i++){
-				if(tabelioes[i] == null){
-					tabelioes[i] = dados;
-					break; //break do for
-				}
-			}
+			
 			
 		}break;////
 		
